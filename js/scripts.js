@@ -36,3 +36,14 @@ if (window.scrollY > 50) {
     navbar.classList.remove('scrolled');
 }
 });
+
+  const sparkleContainer = document.querySelector('.sparkle-wrapper');
+
+  for (let i = 0; i < 50; i++) {
+    const sparkle = document.createElement('div');
+    sparkle.classList.add('sparkle');
+    sparkle.style.left = `${Math.random() * 100}%`;
+    sparkle.style.animationDelay = `${Math.random() * 5}s`;
+    sparkle.style.animationDuration = `${2 + Math.random() * 3}s`;
+    sparkleContainer.appendChild(sparkle);
+  }
