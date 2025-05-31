@@ -1,17 +1,190 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <link rel="icon" type="image/svg+xml" href="public/rocket-takeoff.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"/>  
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarWeaving AI Research Group</title>
+  <link rel="icon" type="image/svg+xml" href="public/rocket-takeoff.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    
-<script src="js/scripts.js"></script>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">StarWeaving AI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navContent">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero parallax">
+    <div class="container h-100 d-flex align-items-center">
+      <div class="row w-100">
+        <!-- Left content -->
+        <div class="col-md-6 d-flex flex-column justify-content-center text-start text-white">
+          <h1 class="hero-title">StarWeaving AI Research Group</h1>
+          <p class="hero-description">
+            Connecting minds in machine learning and artificial intelligence with creativity, science, and open collaboration.
+          </p>
+          <a href="#about" class="btn btn-outline-light mt-4">Learn More</a>
+        </div>
+
+        <!-- Right animated image -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img
+            src="/public/logo.png"
+            alt="AI Animation"
+            class="hero-gif"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About StarWeaving AI</h2>
+      <p class="text-center mx-auto" style="max-width: 700px;">
+        Founded with a vision to explore and expand the frontiers of artificial intelligence, StarWeaving is a research group dedicated to connect similar and intelligent minds together and build open tools that serve both science and society.
+        We focus on areas including large language models, multi-agent systems, and theoretical foundations of machine learning. We are tech enthusiasts with a passion in AI, we are excited to share our research with other people!
+      </p>
+<!-- 
+<section id="gallery" class="py-5 bg-transparent">
+  <div class="container">
+    <div id="galleryCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/public/gallery/gallery1.png" class="d-block w-100" alt="Gallery Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery2.jpg" class="d-block w-100" alt="Gallery Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/gallery3.jpg" class="d-block w-100" alt="Gallery Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section> -->
+
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section parallax" style="background-image: url('/public/cc.png'); color: white;">
+    <div class="container">
+      <h2 class="section-title">Current Work</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card project-card p-3 bg-dark text-light">
+            <h5 class="card-title">AI Agents</h5>
+            <p class="card-text">Experiments with HF Agent Framework, smolagents, llamaindex, and langgraph. Code Agents, Tool Calling Agents. Inference Models, local LiteLLM, RAG. </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card p-3 bg-dark text-light">
+            <h5 class="card-title">Multi-Agent Systems</h5>
+            <p class="card-text">Investigate how AI agents call each other with manager agents, tool agents, and logical graphs. </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card project-card p-3 bg-dark text-light">
+            <h5 class="card-title">Machine Learning and Deep Learning Recommendations</h5>
+            <p class="card-text">Good public and accessable Machine Learning and Deep Learning Resources to study. Event and opportunity sharing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+<section id="team" class="section">
+  <div class="container">
+    <h2 class="section-title">Our Team</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Founder -->
+      <div class="col-md-4">
+        <div class="card team-card text-center">
+          <img src="public/images/lekai.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Founder Photo" style="width: 120px; height: 120px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">lekai-lok</h5>
+            <!-- <p class="card-text">Founder, Website Manager</p> -->
+            <div class="social-links">
+              <a href="https://github.com/efeng2" target="_blank"><i class="bi bi-github"></i></a>
+              <!-- <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="bi bi-linkedin"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member Example -->
+      <div class="col-md-4">
+        <div class="card team-card text-center">
+          <img src="public/images/lycole.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Team Member" style="width: 120px; height: 120px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Lycole</h5>
+            <!-- <p class="card-text">Co-Founder,  Website Manager</p> -->
+            <div class="social-links">
+              <a href="https://github.com/Amy-Feng"><i class="bi bi-github"></i></a>
+              <!-- <a href="https://github.com/Amy-Feng"><i class="bi bi-linkedin"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more members here -->
+      
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="footer text-white py-5" id="contact">
+  <div class="container text-center">
+    <h4 class="mb-4">Contact Us</h4>
+    <div class="footer-contacts d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+      <!-- <div><i class="bi bi-envelope"></i> <a href="mailto:starweaving.ai@gmail.com" class="footer-link">starweaving.ai@example.com</a></div> -->
+      <div><i class="bi bi-github"></i> <a href="https://github.com/starweaving-ai" target="_blank" class="footer-link">GitHub</a></div>
+    <div>
+        <img src="public/xhsLOGO.svg" alt="小红书 logo" style="width: 1em; height: 1em; vertical-align: middle;">
+        <a href="https://www.xiaohongshu.com/user/profile/669ce353000000002401dc85?xsec_token=YBTtn82nlya8Sg-nrazFaUw7QWuofC6CDO7bvZyzyfdB4=&xsec_source=app_share&xhsshare=CopyLink&appuid=669ce353000000002401dc85&apptime=1748510259&share_id=5314946623294a838b02ee2b0bdd1949" target="_blank" class="footer-link">
+            小红书
+        </a>
+    </div>
+      <!-- <div><i class="bi bi-linkedin"></i> <a href="https://linkedin.com/company/starweaving-ai" target="_blank" class="footer-link">LinkedIn</a></div> -->
+    </div>
+    <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1);" />
+    <p class="mb-0">&copy; 2025 StarWeaving AI Research Group. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
